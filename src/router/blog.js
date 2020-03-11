@@ -1,6 +1,7 @@
 // 存在blog路由相关内容  
 function handleBlogRouter(req,res){
     const method = req.method;
+    console.log(req.query);
    // 请求博客列表
    if(method=='GET' && req.path=='/api/blog/list'){
        // 向数据库获取博客信息  sql

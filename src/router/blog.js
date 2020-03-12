@@ -1,7 +1,8 @@
 // 存在blog路由相关内容  
 function handleBlogRouter(req,res){
     const method = req.method;
-    console.log(req.query);
+    //console.log(req.query);
+   // Console.log(req.body);
    // 请求博客列表
    if(method=='GET' && req.path=='/api/blog/list'){
        // 向数据库获取博客信息  sql
@@ -43,6 +44,7 @@ function handleBlogRouter(req,res){
    // 删除一篇博客
    if(method=='POST' && req.path=='/api/blog/del'){
     // 向数据库获取博客信息  sql
+    console.log(rqe.body);
      return {
        mes: '删除博客的接口'
      }

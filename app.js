@@ -2,6 +2,7 @@
 const handleBlogRouter=require('./src/router/blog');
 const handleUserRouter=require('./src/router/user');
 const querystring= require('querystring');
+//  封装promise  获取 post 提交数据
 function getPostDate(req){
 	const method=req.method;
 	const promise=new Promise(function(resolve,reject){

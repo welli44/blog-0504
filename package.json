@@ -4,11 +4,15 @@
   "description": "教学测试案例",
   "main": "./bin/server.js",
   "scripts": {
-    "dev": "nodemon ./bin/server.js"
+    "dev": " cross-env NONV=dev nodemon ./bin/server.js",
+    "pro": " cross-env NONV=product nodemon ./bin/server.js"
   },
   "author": "duanli",
   "license": "ISC",
   "devDependencies": {
     "cross-env": "^7.0.2"
+  },
+  "dependencies": {
+    "mysql": "^2.18.1"
   }
 }
